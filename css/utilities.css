@@ -24,11 +24,22 @@
 
 .btn-primary{
     background: var(--primary);
-    color: var(--secpndary);
+    color: var(--dark);
 }
 
 .btn-primary:hover {
     background:transparent;
     border-color: var(--primary);
     color: var(--primary);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--dark);
 }

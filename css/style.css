@@ -1,7 +1,7 @@
 @import "utilities.css";
 
 :root{
-    --primary: rgb(0, 170, 180);
+    --primary: #00aab4;
     --dark: #102336;
     --pure: #e72a67;
     --ternary: #ece9e9;
@@ -19,32 +19,349 @@ body {
 }
 
 header{
-    background-color: var(--dark);
-    height: 800px;
+    width: 100%;
+    background-image: linear-gradient(to top, #102336 0%, #e72a6698 100%), url(../images/appbuilding.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
+
+/* NAV */
 
 .container{
     max-width: 1152px;
     padding:0 15px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
-header nav .left a {
-    color: var(--pure); 
+.branding {
+    margin-left: 1rem;
+}
+
+header nav .right a {
+    color: var(--dark); 
     text-decoration:none;
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-transform: uppercase;
     transition: all .3s ease;
+    font-size: 1.2rem;
 }
 
-header nav .left a:hover{
+header nav .right a:hover{
     color: var(--ternary);
 }
 
-header nav {
-    padding: 2rem 0;
+.container-nav {
+    padding: 1rem 0;
+    background-color: #ece9e98c;
 }
 
 header nav .branding {
     margin-right: 3rem;
+}
+
+/* HERO */
+
+.hero {
+    padding-top: 5rem;
+    color: var(--ternary);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.hero h6 {
+    width: 100%;
+    font-size: 2rem;
+    color: var(--ternary);
+    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.hero h1 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary);
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero span {
+    color: var(--pure);
+}    
+.hero p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+/* SOBRE NOSOTROS */
+
+section.nosotros{
+    padding: 1rem 0;
+    padding-bottom: 4rem;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+.sobre-nosotros{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.nosotros h2 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: "Montserrat", sans-serif;
+}
+
+section.nosotros h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: var(--pure);
+}
+
+section.nosotros p {
+    color: var(--ternary);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.relatos{
+    width: 40%;
+}
+
+.imagen-hola{
+    width: 50%;
+}
+
+/* SERVICIOS */
+
+section.servicios{
+    padding: 5rem 0;
+    background-color: var(--ternary);
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+.section-heading{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: var(--primary);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-heading + p {
+    color:var(--pure);
+    margin-bottom: 9rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+section.servicios .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    background-color: var(--ternary);
+}    
+
+section.servicios .card-wrapper .card {
+    background-color: var(--dark);
+    color: var(--pure);
+    padding: 1rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+section.servicios .card-wrapper .card img {
+    position: absolute;
+    width: 40%;
+    top: -5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.servicios .card-wrapper .card h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section.servicios .card-wrapper .card p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+section.servicios .card-wrapper .card:hover {
+    background-color: var(--pure);
+    color: var(--dark);
+    font-weight: 600;
+}
+
+/* NOSOTROS */
+
+section.presentacion{
+    padding: 5rem 0;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+.section-heading{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: var(--primary);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-heading + p {
+    color:var(--pure);
+    margin-bottom: 9rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+section.presentacion .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    background-color: var(--dark);
+    flex-wrap: wrap;
+}    
+
+section.presentacion .card-wrapper .card {
+    background-color: var(--ternary);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    position: relative;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+section.presentacion .card-wrapper .card img {
+    position: absolute;
+    width: 40%;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.presentacion .card-wrapper .card h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section.presentacion .card-wrapper .card p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+section.presentacion .card-wrapper .card a {
+    text-decoration: none;
+    color: var(--dark);
+    
+}
+
+section.presentacion .card-wrapper .card a:hover {
+    color: var(--dark);
+}
+
+section.presentacion .card-wrapper .card:hover {
+    background-color: var(--pure);
+    color: var(--dark);
+    font-weight: 400;
+}
+
+/* REVIEWS */
+
+section.reviews{
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+}
+
+section.reviews .section-heading + p {
+    color:var(--pure);
+    margin-bottom: 4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+section.reviews .slider .slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+
+}
+
+section.reviews .slider .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide p {
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+section.reviews .slider-dots .dots{
+    list-style-type:none;
+    display: flex!important;
+}
+
+section.reviews .slider-dots .slide span {
+    font-size: 0.8rem;
+    color: var(--dark);
+}
+
+
+section.reviews .slider-dots {
+    margin-top:2rem;
+}
+
+section.reviews .slider-dots .dots {
+    font-size:0;
+    width:0px;
+    height:30px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+section.reviews .slider-dots .dots {
+    background: var(--pure);
 }

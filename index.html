@@ -7,6 +7,9 @@
 
     <!-- Bootstrap -->
    <link rel="stylesheet" href="dist/css/bootstrap.css">
+
+   <!-- Slick -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     
    <!-- CSS Propio -->
    <link rel="stylesheet" href="css/style.css">
@@ -17,25 +20,145 @@
   </head>
   <body>
     <header>
-        <div class="container">
+        <div class="container-nav">
             <nav class="flex items-center justify-between">
                 <div class="left flex items-center">
                     <div class="branding">
-                        <img src="images/upwardlogo.png" alt="Upward Logo" height="75px">
-                    </div>
-                    <div>
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Contact</a>
+                        <img src="images/logoupward.png" alt="Upward Logo" height="50px">
                     </div>
                 </div>
                 <div class="right">
-                    <button class="btn btn-primary">Contact</button>
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contacto</a>
                 </div>
             </nav>
         </div>
+        <div class="container">
+            <div class="hero">
+                <div class="contenedor-textos">
+                    <h6>Upward Web Solutions</h6>
+                    <h1>Desarrolladores de <span>ideas</span></h1>
+                    <p>Somos más que una software factory. Transformamos lo que está en tu cabeza en realidad.</p>
+                    <div>
+                        <button class="btn btn-primary">Contactanos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#102336" fill-opacity="1" d="M0,256L1440,128L1440,320L0,320Z"></path></svg>
+        </div>
     </header>
+    <section class="nosotros">
+        <div class="container sobre-nosotros">
+            <div class="relatos">
+                    <h2>Nosotros</h2>
+                    <h3>¿Qué es Upward?</h3>
+                    <p>Somos un grupo de jóvenes especialistas en distintas áreas, y nos juntamos para construir productos digitales fantásticos!
+                    Nuestra agencia se compone de los servicios de Product Management, Diseño de marca, Diseño UX/UI, Desarrollo aplicaciones tanto Web como Mobile y Marketing digital. Todo lo que estás necesitando para que tu idea digital se haga realidad.</p>
+                    <h3>¿Desde cuándo existimos?</h3>
+                    <p>Arrancamos a trabajar juntos desde Marzo 2020, y desde ese momento no paramos de meterle rock a las ideas de nuestros clientes, ayudando a definirlas, pulirlas, desarrollarlas y colocarlas en el mercado de la mejor manera posible.</p>
+                </div>
+                <img src="images/hola.svg" alt="hola" class="imagen-hola">
+        </div>
+    </section>
+    <section class="servicios">
+        <div class="container">
+            <h2 class="section-heading">Nuestros servicios</h2>
+            <p>Te proveemos desde el primer, hasta el último servicio de tus aplicaciones</p>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="./images/estrategia.svg" alt="">
+                <h3>Estrategia digital</h3>
+                <p>Desarrollamos una estrategia de comunicación y conectamos tu contenido con tu público. Analizamos tu idea, creamos una identidad de marca y diseñamos tus campañas de publicidad y redes en los distintos canales que más le convienen a tu producto.</p>
+            </div>
+            <div class="card">
+                <img src="./images/programacion.svg" alt="">
+                <h3>Web Institucional</h3>
+                <p>Desarrollamos sitios web innovadores y creativos que se ajustan al servicio o producto que estás brindando. Ya sea que necesites un sitio para tu e-commerce o presentar lo que ofrece tu empresa, con un diseño personalizado y con la última tecnología.</p>
+            </div>
+            <div class="card">
+                <img src="./images/codificacion.svg" alt="">
+                <h3>Aplicación Web/Mobile</h3>
+                <p>Desarrollamos aplicaciones web y móviles a medida para cualquier tipo de dispositivo. Utilizamos las últimas tecnologías del mercado y nos centramos en que la experiencia del usuario sea la mejor posible. 
+            </div>
+        </div>
+    </section>
+    <section class="presentacion">
+        <div class="container">
+            <h2 class="section-heading">Nuestro equipo</h2>
+            <p>Estos somos nosotros. Listos para salir a la cancha.</p>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Darío - Teach Lead / Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque earum voluptate voluptas sit voluptatum perferendis. Nihil expedita quos quae.</p>
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Juan Manuel - Product and Business Analyst</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea expedita explicabo eum facere quasi error facilis minus adipisci iste.</p>
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Carolina - Marketing and Product Analyst</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p>
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Lucas - Developer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p>
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Ramiro - Developer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p>
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Sabrina - QA Specialist</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p> 
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+            <div class="card">
+                <img src="./images/trabajador.jpg" alt="">
+                <h3>Natalia - Designer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p> 
+                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h1 class="section-heading">Clientes felices</h1>
+            <p>Qué dicen nuestros clientes sobre nosotros:</p>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./images/trabajador.jpg" alt="">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis obcaecati est nulla, rem accusantium placeat facere sunt consequuntur! Quisquam!"</p>
+                    <span>- Fede, B&C Inversiones</span>
+                </div>
+                <div class="slide">
+                    <img src="./images/trabajador.jpg" alt="">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis obcaecati est nulla, rem accusantium placeat facere sunt consequuntur! Quisquam!"</p>
+                    <span>- Fede, B&C Inversiones</span>
+                </div>
+            </div>
+            <div class="slider-dots">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
