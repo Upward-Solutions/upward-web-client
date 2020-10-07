@@ -35,11 +35,12 @@
 
 .btn-secondary {
     background: transparent;
-    color: var(--primary);
-    border-color: var(--primary);
+    color: var(--dark);
+    border-color: var(--dark);
 }
 
 .btn-secondary:hover {
-    background: var(--primary);
+    background: var(--ternary);
+    border-color: var(--ternary);
     color: var(--dark);
 }

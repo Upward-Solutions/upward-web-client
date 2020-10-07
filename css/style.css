@@ -85,10 +85,10 @@ header nav .branding {
 
 .hero h1 {
     font-family: "Montserrat", sans-serif;
+    font-weight: 800;
     color: var(--primary);
     width: 100%;
     font-size: 5rem;
-    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
@@ -106,7 +106,7 @@ header nav .branding {
 
 section.nosotros{
     padding: 1rem 0;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     background-color: var(--dark);
     display: flex;
     justify-content: space-between;
@@ -123,15 +123,15 @@ section.nosotros{
 section.nosotros h2 {
     margin-bottom: 1rem;
     font-size: 4rem;
-    font-weight: 600;
     color: var(--primary);
     font-family: "Montserrat", sans-serif;
+    font-weight: 800;
 }
 
 section.nosotros h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 800;
     color: var(--pure);
 }
 
@@ -149,10 +149,17 @@ section.nosotros p {
     width: 50%;
 }
 
+/* SVG */
+
+.svg {
+    background-color: var(--ternary);
+}
+
 /* SERVICIOS */
 
 section.servicios{
-    padding: 5rem 0;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     background-color: var(--ternary);
     display: flex;
     justify-content: space-between;
@@ -166,14 +173,14 @@ section.servicios{
     color: var(--primary);
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .section-heading + p {
     color:var(--pure);
     margin-bottom: 9rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 section.servicios .card-wrapper{
@@ -186,7 +193,7 @@ section.servicios .card-wrapper{
 
 section.servicios .card-wrapper .card {
     background-color: var(--dark);
-    color: var(--pure);
+    color: var(--ternary);
     padding: 1rem 2rem;
     position: relative;
     padding-top: 4rem;
@@ -214,8 +221,7 @@ section.servicios .card-wrapper .card p {
 
 section.servicios .card-wrapper .card:hover {
     background-color: var(--pure);
-    color: var(--dark);
-    font-weight: 600;
+    color: var(--ternary);
 }
 
 /* NOSOTROS */
@@ -235,14 +241,14 @@ section.presentacion{
     color: var(--primary);
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .section-heading + p {
     color:var(--pure);
     margin-bottom: 9rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 section.presentacion .card-wrapper{
@@ -250,6 +256,7 @@ section.presentacion .card-wrapper{
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
+    place-items: center;
     background-color: var(--dark);
     flex-wrap: wrap;
 }    
@@ -294,7 +301,7 @@ section.presentacion .card-wrapper .card a:hover {
 
 section.presentacion .card-wrapper .card:hover {
     background-color: var(--pure);
-    color: var(--dark);
+    color: var(--ternary);
     font-weight: 400;
 }
 
@@ -302,14 +309,22 @@ section.presentacion .card-wrapper .card:hover {
 
 section.reviews{
     padding-top: 5rem;
-    padding-bottom: 0rem;
+    padding-bottom: 5rem;
 }
 
 section.reviews .section-heading + p {
     color:var(--pure);
     margin-bottom: 4rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
+}
+
+section.reviews .slider .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
 }
 
 section.reviews .slider .slide {
@@ -321,22 +336,9 @@ section.reviews .slider .slide {
 
 }
 
-section.reviews .slider .slide img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 2rem;
-}
-
 section.reviews .slider .slide p {
     color: var(--dark);
     margin-bottom: 1rem;
-}
-
-section.reviews .slider-dots .dots{
-    list-style-type:none;
-    display: flex!important;
 }
 
 section.reviews .slider-dots .slide span {
@@ -344,15 +346,20 @@ section.reviews .slider-dots .slide span {
     color: var(--dark);
 }
 
+section.reviews .slider-dots .dots{
+    list-style-type:none;
+    display: flex!important;
+    justify-content: center;
+}
 
 section.reviews .slider-dots {
     margin-top:2rem;
 }
 
-section.reviews .slider-dots .dots {
+section.reviews .slider-dots button {
     font-size:0;
-    width:0px;
-    height:30px;
+    width:8px;
+    height:5px;
     margin-right: 0.3rem;
     border: none;
     outline: none;
@@ -362,6 +369,49 @@ section.reviews .slider-dots .dots {
 
 }
 
-section.reviews .slider-dots .dots {
+section.reviews .dots li.slick-active button {
     background: var(--pure);
+    width: 20px;
+}
+
+/* CONTACTO*/
+
+section.contact{
+    padding: 5rem 0;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+section.contact .section-heading + p {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    background-color: var(--dark);
+    flex-wrap: wrap;
+}
+
+section.contact .card-wrapper .card {
+    background-color: var(--dark);
+    color: var(--ternary);
+    padding: 1rem 2rem;
+    position: relative;
+    text-align: center;
+    border: none;
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+    width: 40%;
+    left: 50%;
+    transform: translateX(75%);
 }
