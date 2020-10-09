@@ -11,8 +11,15 @@
    <!-- Slick -->
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     
+   <!-- Boxicons -->
+   <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
    <!-- CSS Propio -->
    <link rel="stylesheet" href="css/style.css">
+
+   <!-- ScrollReveal-->
+
+   <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Upward</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
@@ -29,10 +36,10 @@
                 </div>
                 <div class="right">
                     <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Servicios</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contacto</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#presentacion">Quiénes somos</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </nav>
         </div>
@@ -42,8 +49,8 @@
                     <h6>Upward Web Solutions</h6>
                     <h1>Desarrolladores de <span>ideas</span></h1>
                     <p>Somos más que una software factory. Transformamos lo que está en tu cabeza en realidad.</p>
-                    <div>
-                        <button class="btn btn-primary">Contactanos</button>
+                    <div class="boton-hero">
+                        <a href="#"><button class="btn btn-primary">Contactanos</button></a>
                     </div>
                 </div>
             </div>
@@ -52,7 +59,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#102336" fill-opacity="1" d="M0,256L1440,128L1440,320L0,320Z"></path></svg>
         </div>
     </header>
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
         <div class="container sobre-nosotros">
             <div class="relatos">
                     <h2>Nosotros</h2>
@@ -70,7 +77,7 @@
             <path fill="#102336" fill-opacity="1" d="M0,128L1440,224L1440,0L0,0Z"></path>
           </svg>    
     </div>
-    <section class="servicios">
+    <section class="servicios" id="servicios">
         <div class="container">
             <h2 class="section-heading">Nuestros servicios</h2>
             <p>Te proveemos desde el primer, hasta el último servicio de tus aplicaciones</p>
@@ -92,27 +99,27 @@
             </div>
         </div>
     </section>
-    <section class="presentacion">
+    <section class="presentacion" id="presentacion">
         <div class="container">
             <h2 class="section-heading">Nuestro equipo</h2>
             <p>Estos somos nosotros. Listos para salir a la cancha.</p>
         <div class="card-wrapper">
             <div class="card">
-                <img src="./images/trabajador.jpg" alt="">
-                <h3>Darío - Teach Lead / Developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque earum voluptate voluptas sit voluptatum perferendis. Nihil expedita quos quae.</p>
-                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+                <img src="./images/socios/Dario.JPG" alt="">
+                <h3>Darío - Teach Lead / Frontend Developer</h3>
+                <p>Soy un apasionado por la tecnología y la innovación. El trabajo que más me motiva es en equipo. Me angustia la desigualdad y trato de no reproducirla.</p>
+                <button class="btn btn-secondary"><a href="https://www.linkedin.com/in/dario-di-gulio-3941a6142/">Linkedin</a></button>
             </div>
             <div class="card">
-                <img src="./images/trabajador.jpg" alt="">
+                <img src="./images/socios/Juan.jpeg" alt="">
                 <h3>Juan Manuel - Product and Business Analyst</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea expedita explicabo eum facere quasi error facilis minus adipisci iste.</p>
+                <p>Me apasiona inventar productos nuevos y que le sirvan a mucha gente. Voy a hacer que tu producto sea el que quieren todos tus clientes. </p>
                 <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
             </div>
             <div class="card">
-                <img src="./images/trabajador.jpg" alt="">
+                <img src="./images/socios/Caro.jpeg" alt="">
                 <h3>Carolina - Marketing and Product Analyst</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p>
+                <p>Si se puede medir, se puede mejorar. Tengo una perra que se llama Natu y la amo. Me gusta el marketing y el diseño, y quiero especializarme en estas dos áreas. </p>
                 <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
             </div>
             <div class="card">
@@ -122,10 +129,10 @@
                 <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
             </div>
             <div class="card">
-                <img src="./images/trabajador.jpg" alt="">
-                <h3>Ramiro - Developer</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit explicabo, asperiores at error velit distinctio inventore architecto minima consequatur!</p>
-                <button class="btn btn-secondary"><a href="#">Linkedin</a></button>
+                <img src="./images/socios/Rama.jpg" alt="">
+                <h3>Ramiro - Backend Developer</h3>
+                <p>Me considero una persona positiva y emprendedora. Me gusta el desarrollo de Software, el código limpio y aplicar buenas prácticas.</p>
+                <button class="btn btn-secondary"><a href="https://www.linkedin.com/in/ramiro-castrogiovanni-820596156/">Linkedin</a></button>
             </div>
             <div class="card">
                 <img src="./images/trabajador.jpg" alt="">
@@ -161,29 +168,54 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contacto">
         <div class="container">
             <h1 class="section-heading">Contactanos</h1>
             <p>Si te interesa hablar con nosotros, dejanos tu contacto</p>
             <div class="card-wrapper">
                 <div class="card">
-                    <img src="/images/whatsapp.svg" alt="">
-                    <h2>Llamanos</h2>
+                    <a href="#"><i class='bx bxl-whatsapp bx-tada' style='color:#00aab4; font-size: 108pt;'></i></a>
+                    <h3>Llamanos</h3>
                     <h6>1231231231</h6>
                 </div>
                 <div class="card">
-                    <img src="/images/instagramlogo.svg" alt="">
-                    <h2>Seguinos</h2>
+                    <a href="#"><i class='bx bxl-instagram bx-tada' style='color:#00aab4; font-size: 108pt;'></i></a>
+                    <h3>Seguinos</h3>
                     <h6>@UpwardWebSolutions</h6>
                 </div>
                 <div class="card">
-                    <img src="/images/correo.svg" alt="">
-                    <h2>Escribinos</h2>
+                    <a href="#"><i class='bx bx-mail-send bx-tada' style='color:#00aab4; font-size: 108pt;'></i></a>
+                    <h3>Escribinos</h3>
                     <h6>upwardsd@gmail.com</h6>
                 </div>
             </div>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Tu nombre *">
+                    <input type="email" placeholder="Tu E-mail *">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Asunto...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
         </div>
     </section>
+    <footer>
+        <img class="footer-logo" src="./images/logoupward.png" alt="Logo Upward" height="50px">
+        <div class="footer-socials">
+            <a href="#"><i class='bx bxl-instagram' style='color:#00aab4; font-size:24pt;'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square' style='color:#00aab4; font-size:24pt;'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square' style='color:#00aab4; font-size:24pt;'></i></a>
+            <a href="#"><i class='bx bx-world' style='color:#00aab4; font-size:24pt;'></i></a>
+        </div>
+        <div class="copyright">
+            Upward @2020 - Transformamos lo que está en tu cabeza en realidad.
+        </div>
+    </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

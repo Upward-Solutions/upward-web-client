@@ -7,6 +7,10 @@
     --ternary: #ece9e9;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -41,7 +45,7 @@ header{
 }
 
 header nav .right a {
-    color: var(--dark); 
+    color: var(--ternary); 
     text-decoration:none;
     margin-right: 1rem;
     text-transform: uppercase;
@@ -50,12 +54,11 @@ header nav .right a {
 }
 
 header nav .right a:hover{
-    color: var(--ternary);
+    color: var(--primary);
 }
 
 .container-nav {
     padding: 1rem 0;
-    background-color: #ece9e98c;
 }
 
 header nav .branding {
@@ -67,11 +70,25 @@ header nav .branding {
 .hero {
     padding-top: 5rem;
     color: var(--ternary);
-    height: 450px;
+    height: 500px; }
+
+.contenedor-textos {
+    margin: auto;
+    padding-top: 4rem;
     display: flex;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.contenedor-textos p {
+    align-self: center;
+    margin-left: 4rem;
+
+}
+
+.boton-hero {
+    transform: translateX(205%);
 }
 
 .hero h6 {
@@ -271,11 +288,13 @@ section.presentacion .card-wrapper .card {
 }
 
 section.presentacion .card-wrapper .card img {
+    height: 110px;
     position: absolute;
-    width: 40%;
+    width: 30%;
     top: -4rem;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 24px;
 }
 
 section.presentacion .card-wrapper .card h3 {
@@ -398,6 +417,7 @@ section.contact .card-wrapper{
     grid-row-gap: 6rem;
     background-color: var(--dark);
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 section.contact .card-wrapper .card {
@@ -409,9 +429,99 @@ section.contact .card-wrapper .card {
     border: none;
 }
 
-section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
+section.contact .card-wrapper .card i{
+    margin-bottom: 2rem;
     width: 40%;
-    left: 50%;
-    transform: translateX(75%);
+    padding-right: 9rem;
+}
+
+section.contact .card-wrapper .card h3{ 
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+}
+
+section.contact .card-wrapper .card h6 {
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+/* FORM CONTACTO */
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--dark);
+}
+
+section.contact .input-wrap-2{
+    display:flex;
+    flex-direction: column;
+}
+
+section.contact .input-wrap-2 input {
+    margin-bottom: 2rem;
+    border: 1px solid var(--primary);
+    background-color: var(--dark);
+    font-size: 0.9rem;
+}
+
+section.contact input {
+    padding: 0.5rem;
+    border: 1px solid var(--primary);
+    background-color: var(--dark);
+    font-size: 0.9rem;
+    color: var(--ternary);
+}
+
+section.contact .input-wrap-2 textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--primary);
+    background-color: var(--dark);
+    font-size: 0.9rem;
+    color: var(--ternary);
+}
+
+section.contact .input-wrap-2 textarea:focus {
+    outline: none;
+    outline-color: var(--ternary);
+    color: var(--ternary);
+}
+
+section.contact input:focus {
+    outline: none;
+    outline-color: var(--ternary);
+    color: var(--ternary);
+}
+
+section.contact .btn-wrapper {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* FOOTER */ 
+
+footer {
+    background-color: var(--ternary);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .footer-logo {
+    margin-bottom: 3rem;
+}
+
+footer .footer-socials {
+    margin-bottom: 2rem;
+}
+
+footer .footer-socials a {
+    margin-right: 1rem;
+}
+
+footer .copyright {
+    color: var(--dark);
 }
