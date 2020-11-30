@@ -1,3 +1,3 @@
-## Link temporal de la web para test
+## Link de la web para test
 
-https://agitated-euler-122bc3.netlify.app/
+http://test.upwardwebsolutions.com.ar/
